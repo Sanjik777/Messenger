@@ -1,0 +1,19 @@
+﻿<Window x:Class="ServerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServerWPF"
+        mc:Ignorable="d"
+        Title="ServerWindow" Height="450" Width="800">
+	<Grid>
+		<TextBox Name="infoTextBox" IsReadOnly="True" Margin="10,10,0,127" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="772"/>
+		<ComboBox Name="listOfIP" HorizontalAlignment="Left" Margin="10,0,0,60" Width="229" Height="22" VerticalAlignment="Bottom"/>
+		<TextBox Name="portTextBox" Margin="291,0,0,59" TextWrapping="Wrap" Text="12345" HorizontalAlignment="Left" Width="229" Height="23" VerticalAlignment="Bottom"/>
+		<Label Content="Server IP Address :" Margin="10,0,0,86" HorizontalAlignment="Left" Width="159" Height="26" VerticalAlignment="Bottom"/>
+		<Label Content="Server Port :" Margin="291,0,0,86" HorizontalAlignment="Left" Width="101" Height="26" VerticalAlignment="Bottom"></Label>
+		<Button Click="StartButtonClick" Content="Start" Name="buttonStart" HorizontalAlignment="Left" Margin="550,0,0,60" VerticalAlignment="Bottom" Width="93"/>
+		<Button Click="CloseButtonClick" Content="Close" Name="closeButton" HorizontalAlignment="Left" Margin="670,0,0,60" VerticalAlignment="Bottom" Width="91"/>
+
+	</Grid>
+</Window>

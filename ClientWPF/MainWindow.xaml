@@ -1,0 +1,22 @@
+﻿<Window x:Class="ClientWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWPF"
+        mc:Ignorable="d"
+        Title="ClientWindow" Height="450" Width="800">
+	<Grid>
+		<TextBox Name="ipServerTextBox" HorizontalAlignment="Left" Height="23" Margin="56,50,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="121"/>
+		<TextBox Name="portTextBox" HorizontalAlignment="Left" Height="23" Margin="229,51,0,0" TextWrapping="Wrap" Text="12345" VerticalAlignment="Top" Width="80"/>
+		<Button Click="ConnectButtonClick" Content="Connect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="493,51,0,0"/>
+		<Button Click="DisonnectButtonClick" Content="Disconnect" HorizontalAlignment="Left" Margin="600,51,0,0" VerticalAlignment="Top" Width="75"/>
+		<Label Content="IP Server :" HorizontalAlignment="Left" Margin="56,19,0,0" VerticalAlignment="Top"/>
+		<Label Content="Port :" HorizontalAlignment="Left" Margin="229,19,0,0" VerticalAlignment="Top"/>
+		<TextBox Name="messageSendTextBox" AcceptsReturn="True" HorizontalAlignment="Left" Height="120" Margin="56,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="654"/>
+		<TextBox Name="messageReceiveTextBox" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" IsReadOnly="true" HorizontalAlignment="Left" Height="142" Margin="56,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="654"/>
+		<Label Content="Nick :" HorizontalAlignment="Left" Margin="344,19,0,0" VerticalAlignment="Top" Width="76"/>
+		<Button Click="SendButtonClick" Content="Отправить сообщение" HorizontalAlignment="Left" Margin="313,218,0,0" VerticalAlignment="Top" Width="148"/>
+		<TextBox Name="nickTextBox" HorizontalAlignment="Left" Height="23" Margin="341,51,0,0" TextWrapping="Wrap" Text="Asd" VerticalAlignment="Top" Width="120"/>
+	</Grid>
+</Window>
